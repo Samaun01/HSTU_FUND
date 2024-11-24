@@ -30,152 +30,203 @@ Project Name: HSTU Digital Fundraisng System : Supporting Needy Students
 <br><br><br>
 
 
-## CONTENTS  
 
-- [Abstract](#abstract)  
-- [Introduction](#introduction)  
-- [SDLC Model: Agile Model](#sdlc-model-agile-model)  
-- [Project Vision and Planning](#project-vision-and-planning)  
-- [User Requirements and System Requirements](#user-requirements-and-system-requirements)  
-- [Design and Architecture](#design-and-architecture)  
-- [Development (Iterations/Sprints)](#development-iterations-sprints)  
-- [Testing and Feedback](#testing-and-feedback)  
-- [Deployment](#deployment)  
-- [UML Diagram](#uml-diagram)  
-- [Maintenance and Continuous Improvement](#maintenance-and-continuous-improvement)  
-- [Limitations](#limitations)  
-- [Future Work](#future-work)  
-- [Key Benefits of Using Agile for This Project](#key-benefits-of-using-agile-for-this-project)  
-- [Conclusion](#conclusion)  
-- [References](#references)  
 
 ---
 
-## Abstract  
-The **HSTU Digital Fundraising System** is a web-based platform designed to help students in need by facilitating transparent and secure fundraising. The system empowers donors, administrators, and beneficiaries to collaborate effectively, ensuring fairness and accountability. Built using the Agile SDLC model, the project emphasizes continuous improvement and user-centered development. This report highlights the design, development, and deployment process, including future goals for expansion.  
+## Table of Contents
+1. [Introduction](#1-introduction)  
+2. [Agile SDLC Approach](#2-agile-sdlc-approach)  
+3. [Phases of Project Development](#3-phases-of-project-development)  
+   - [Phase 1: Concept and Initiation](#phase-1-concept-and-initiation)  
+   - [Phase 2: Planning](#phase-2-planning)  
+   - [Phase 3: Iterative Development (Sprints)](#phase-3-iterative-development-sprints)  
+   - [Phase 4: Testing and Quality Assurance](#phase-4-testing-and-quality-assurance)  
+   - [Phase 5: Deployment](#phase-5-deployment)  
+   - [Phase 6: Maintenance and Continuous Improvement](#phase-6-maintenance-and-continuous-improvement)  
+4. [Detailed Features of the System](#4-detailed-features-of-the-system)  
+   - [Donor Module](#41-donor-module)  
+   - [Student Module](#42-student-module)  
+   - [Administrative Dashboard](#43-administrative-dashboard)  
+   - [Payment Gateway](#44-payment-gateway)  
+   - [Transparency Features](#45-transparency-features)  
+5. [Anticipated Challenges and Mitigation Strategies](#5-anticipated-challenges-and-mitigation-strategies)  
+6. [Project Benefits](#6-project-benefits)  
+   - [For Students](#for-students)  
+   - [For Donors](#for-donors)  
+   - [For HSTU](#for-hstu)  
+7. [Conclusion](#7-conclusion)  
 
 ---
 
-## Introduction  
-Supporting students who face financial challenges is crucial for fostering an inclusive academic environment. The **HSTU Digital Fundraising System** provides a seamless and user-friendly platform to connect donors with students in need. It aims to simplify fundraising while ensuring trust, transparency, and accountability. By leveraging secure payment systems, role-based access, and real-time updates, this system ensures that donations are impactful and well-managed.  
+## 1. Introduction  
+**Project Title:**  
+HSTU Digital Fundraising System: Supporting Needy Students  
+
+**Project Objective:**  
+The primary goal is to create a digital platform that bridges the gap between donors and needy students at HSTU. The system will enable transparent, efficient, and secure financial assistance while fostering accountability and trust among stakeholders.  
+
+**Key Outcomes:**  
+- Streamlined donation processes.  
+- Secure and traceable fund transactions.  
+- Transparency in fund allocation and usage.  
+
+**Stakeholders:**  
+1. **Needy Students:** Students seeking financial aid for education and personal expenses.  
+2. **Donors:** Alumni, philanthropic individuals, and organizations willing to contribute.  
+3. **University Authorities:** Responsible for verifying students and monitoring fund distribution.  
 
 ---
 
-## SDLC Model: Agile Model  
+## 2. Agile SDLC Approach  
 
-### Why Agile?  
-The Agile SDLC model was chosen for its adaptability and focus on user collaboration. Agile enables:  
-1. **Iterative Development:** Delivering features incrementally ensures quick user feedback and adjustments.  
-2. **User-Centric Design:** Direct engagement with stakeholders guarantees the platform meets real-world needs.  
-3. **Transparency:** Regular reviews ensure that all development is visible to the team and stakeholders.  
+**Why Agile?**  
+Agile is chosen for its flexibility, iterative development cycles, and focus on user feedback. Since donor and student needs may evolve during the project, Agile ensures adaptability while maintaining high product quality.  
 
----
-
-## Project Vision and Planning  
-The **HSTU Digital Fundraising System** was planned with the following goals:  
-1. Provide a secure platform for collecting and managing donations.  
-2. Enable students to apply for financial assistance transparently.  
-3. Equip administrators with tools for campaign management and verification.  
-
-Key planning phases included:  
-1. Requirement gathering from students, donors, and administrators.  
-2. Designing wireframes and system architecture.  
-3. Setting up an Agile roadmap with sprints for incremental development.  
+**Core Agile Principles Applied:**  
+- **Iterative Development:** Breaking the project into manageable sprints.  
+- **Collaboration:** Regular involvement of donors, students, and university staff.  
+- **Continuous Feedback:** Incorporating suggestions from all stakeholders.  
+- **Working Software:** Delivering a functional prototype at the end of each sprint.  
 
 ---
 
-## User Requirements and System Requirements  
+## 3. Phases of Project Development  
 
-### User Requirements  
-1. **Donors:**  
-   - Secure donation process with transaction history.  
-   - Real-time updates on campaign progress.  
-2. **Beneficiaries:**  
-   - Application for financial aid with document upload.  
-   - Status tracking of applications.  
-3. **Administrators:**  
-   - Verification of beneficiaries.  
-   - Campaign creation and fund allocation reports.  
-
-### System Requirements  
-1. **Frontend:** Responsive user interface for web and mobile devices.  
-2. **Backend:** Secure server handling authentication, data storage, and transactions.  
-3. **Database:** Store user information, campaign details, and transaction logs.  
-4. **Payment Gateway:** Integration with secure APIs like Stripe.  
-5. **Notifications:** Real-time alerts for donors and beneficiaries.  
+### Phase 1: Concept and Initiation  
+- **Activities:**  
+  - Conduct stakeholder interviews to identify pain points.  
+  - Analyze existing donation and aid workflows at HSTU.  
+  - Define project goals, scope, and high-level requirements.  
+- **Output Deliverables:**  
+  - Project charter and vision document.  
+  - Stakeholder requirement document.  
 
 ---
 
-## Design and Architecture  
-
-- **Frontend:** Built using React.js for a dynamic and responsive user interface.  
-- **Backend:** Node.js/Express.js for scalable and efficient server-side operations.  
-- **Database:** MongoDB for storing campaign and user data.  
-- **Security:** Implemented using HTTPS, JWT for authentication, and encryption for sensitive data.  
-
----
-
-## Development (Iterations/Sprints)  
-
-### Sprint Breakdown  
-1. **Sprint 1:** Requirement gathering, wireframing, and project setup.  
-2. **Sprint 2:** User authentication and role-based access implementation.  
-3. **Sprint 3:** Campaign creation and application process.  
-4. **Sprint 4:** Payment gateway integration and transaction tracking.  
-5. **Sprint 5:** UI refinement, bug fixes, and deployment preparation.  
-
----
-
-## Testing and Feedback  
-
-- **Testing Types:**  
-  - Unit Testing: Ensured each component functions as expected.  
-  - Integration Testing: Verified seamless interaction between components.  
-  - System Testing: Tested the entire platform for stability.  
-- **Feedback:** Conducted user testing with donors and students, leading to refinements in navigation and user flow.  
+### Phase 2: Planning  
+- **Activities:**  
+  - Define user personas (donors, students, administrators).  
+  - Prepare user stories for essential features:  
+    - **Donor registration and profile management.**  
+    - **Student application submission and verification.**  
+    - **Donation tracking and reporting.**  
+  - Develop a project backlog with prioritized tasks.  
+  - Create the Minimum Viable Product (MVP) scope, including core features like:  
+    - Secure payment gateway.  
+    - Student profile management.  
+    - Fund allocation transparency dashboard.  
+- **Tools Used:**  
+  - Agile boards (e.g., Trello, Jira).  
+  - Wireframing tools (e.g., Figma, Adobe XD).  
+- **Output Deliverables:**  
+  - Project roadmap and sprint schedule.  
+  - Backlog and feature prioritization.  
 
 ---
 
-## Deployment  
-The platform was deployed on AWS for scalability and reliability. A CI/CD pipeline automates future updates.  
+### Phase 3: Iterative Development (Sprints)  
+Development follows an iterative process, ensuring functionality is added incrementally. Each sprint includes planning, coding, testing, and review.  
 
---- 
-
----
-
-## Maintenance and Continuous Improvement  
-1. **Regular Updates:** Incorporating user feedback to improve features.  
-2. **Monitoring:** Continuous performance monitoring and security audits.  
-3. **Support:** Ensuring prompt technical support for users.  
-
----
-
-## Limitations  
-1. **Internet Dependency:** Requires a stable internet connection.  
-2. **Scalability:** Additional infrastructure may be needed for a larger user base.  
+| **Sprint** | **Duration** | **Key Activities** | **Expected Deliverables** |  
+|------------|--------------|---------------------|---------------------------|  
+| Sprint 1   | 2 Weeks      | User registration (donors, students), profile management. | Functional user management module. |  
+| Sprint 2   | 3 Weeks      | Implement secure payment gateway and donation tracking. | Donation processing system. |  
+| Sprint 3   | 2 Weeks      | Student application portal and verification system. | Functional application workflow. |  
+| Sprint 4   | 3 Weeks      | Fund allocation dashboard, notification system. | End-to-end integrated system. |  
+| Sprint 5   | 2 Weeks      | UI/UX optimization and accessibility improvements. | Mobile-friendly platform. |  
 
 ---
 
-## Future Work  
-1. Develop mobile applications for iOS and Android.  
-2. Expand the system to support international donors.  
-3. Implement AI for fraud detection and smart fund allocation.  
+### Phase 4: Testing and Quality Assurance  
+- **Testing Techniques:**  
+  - **Unit Testing:** Validate individual modules like donor registration and fund allocation.  
+  - **Integration Testing:** Ensure seamless interaction between components.  
+  - **Usability Testing:** Invite a focus group of users to assess the system’s intuitiveness.  
+  - **Security Testing:** Perform penetration tests on payment gateway and user data handling.  
+- **Tools Used:**  
+  - Selenium (automation testing).  
+  - OWASP ZAP (security testing).  
+- **Deliverables:**  
+  - Bug reports and resolution logs.  
+  - Finalized test cases.  
 
 ---
 
-## Key Benefits of Using Agile for This Project  
-1. **Flexibility:** Adapted to changing requirements during development.  
-2. **Transparency:** Frequent updates ensured stakeholder trust.  
-3. **User Feedback:** Integrated insights from actual users into the design.  
+### Phase 5: Deployment  
+- **Activities:**  
+  - Deploy the system on a reliable cloud platform (e.g., AWS, Azure).  
+  - Perform load testing to ensure scalability.  
+  - Configure system backups and disaster recovery mechanisms.  
+- **Deliverables:**  
+  - Fully operational digital fundraising platform.  
+  - Deployment and installation guides.  
 
 ---
 
-## Conclusion  
-The **HSTU Digital Fundraising System** demonstrates how technology can empower communities to support those in need. This platform has the potential to foster a more inclusive academic environment by bridging the gap between donors and beneficiaries.  
+### Phase 6: Maintenance and Continuous Improvement  
+- **Activities:**  
+  - Set up a feedback loop through surveys and reports from users.  
+  - Regularly update the platform with new features based on user requests.  
+  - Ensure compliance with data privacy laws (e.g., GDPR).  
+- **Deliverables:**  
+  - Regular performance reports.  
+  - Feature updates log.  
 
 ---
 
-## References  
-1. Agile Alliance. *"Agile Software Development."* https://www.agilealliance.org  
-2. MongoDB Documentation. *"NoSQL Database Systems."* https://www.mongodb.com/docs  
-3. Stripe API. *"Secure Payment Processing."* https://stripe.com/docs  
+## 4. Detailed Features of the System  
+
+### 4.1. Donor Module  
+- Secure account creation and login.  
+- View student profiles and funding requests.  
+- Donation tracking and history reports.  
+
+### 4.2. Student Module  
+- Apply for financial assistance with detailed requests.  
+- Upload necessary documents (e.g., proof of need, academic records).  
+- Receive notifications about fund status.  
+
+### 4.3. Administrative Dashboard  
+- Verify student requests and documents.  
+- Manage fund allocation and disbursement.  
+- Generate reports for transparency and accountability.  
+
+### 4.4. Payment Gateway  
+- Integrated with secure providers like Stripe or PayPal.  
+- Supports multiple payment methods (credit card, bank transfer).  
+
+### 4.5. Transparency Features  
+- Real-time fund tracking for donors.  
+- Public allocation reports to build trust.  
+
+---
+
+## 5. Anticipated Challenges and Mitigation Strategies  
+
+| **Challenge** | **Mitigation Strategy** |  
+|---------------|--------------------------|  
+| Ensuring data privacy. | Implementing end-to-end encryption, adhering to GDPR guidelines. |  
+| Gaining donor trust. | Transparent fund usage reports and success stories from students. |  
+| Handling technical failures. | Automated backups and disaster recovery mechanisms. |  
+
+---
+
+## 6. Project Benefits  
+
+### For Students  
+- Quick access to financial support.  
+- Equal opportunities regardless of socio-economic background.  
+
+### For Donors  
+- Assurance of fund usage through transparent reporting.  
+- A simple, user-friendly process to contribute.  
+
+### For HSTU  
+- Enhanced reputation as a socially responsible institution.  
+- Strengthened alumni relationships.  
+
+---
+
+## 7. Conclusion  
+The HSTU Digital Fundraising System will not only support needy students but also create a transparent and trustworthy donation ecosystem. Using Agile SDLC ensures continuous improvement and adaptability to meet the needs of all stakeholders effectively.  
