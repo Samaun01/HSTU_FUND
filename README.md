@@ -198,7 +198,10 @@ Development follows an iterative process, ensuring functionality is added increm
 
 ### 4.5. Transparency Features  
 - Real-time fund tracking for donors.  
-- Public allocation reports to build trust.  
+- Public allocation reports to build trust.
+
+![UML](https://github.com/user-attachments/assets/80ae18d5-dc9d-4ef0-b713-dab3e7b4e56a)
+
 
 ---
 
